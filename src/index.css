@@ -3,8 +3,26 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  /* font-optical-sizing: auto;
+  background: rgba(0, 0, 0, 0, 7); */
 }
 
 .list:hover {
   color: #ff6464;
 }
+.lists:hover {
+  color: #ff6464;
+}
+
+/* .MuiButtonBase-root:hover {
+  text-transform: capitalize !important;
+  color: #ff5252 !important;
+}
+
+
+
+
+/* #ids {
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0, 7) !important;
+} */

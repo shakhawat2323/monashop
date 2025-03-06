@@ -5,3 +5,11 @@
   background-color: #ff5252;
   color: black;
 }
+.link {
+  color: #000; /* Default text color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.link:hover {
+  color: #ff5252; /* Changes text color on hover */
+}
