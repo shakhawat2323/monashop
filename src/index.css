@@ -14,6 +14,17 @@ body {
   color: #ff6464;
 }
 
+.submenu:hover {
+  visibility: hidden;
+}
+.submenu:hover {
+  opacity: 1 !important ;
+  visibility: inherit;
+}
+
+/* .submenu {
+  display: none;
+} */
 /* .MuiButtonBase-root:hover {
   text-transform: capitalize !important;
   color: #ff5252 !important;
