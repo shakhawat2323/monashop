@@ -18,7 +18,7 @@ const Productslider = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Navigation, Pagination]}
+          modules={[Navigation]}
           className="mySwiper  "
         >
           <SwiperSlide className="mt-3">

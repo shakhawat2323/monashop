@@ -18,11 +18,11 @@ import Img10 from "../../assets/img/slider/img11.png";
 import Img11 from "../../assets/img/slider/img10.png";
 import { Link } from "react-router";
 
-const Bannarslider = () => {
+const Bannarslider = (props) => {
   return (
     <div className="mt-5 w-11/12 mx-auto">
       <Swiper
-        slidesPerView={4}
+        slidesPerView={props.item}
         spaceBetween={30}
         freeMode={true}
         modules={[FreeMode, Pagination]}
@@ -31,7 +31,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="w-full bg-white h-32 flex flex-col rounded-lg shadow-md hover:scale-105 transition-transform items-center"
+              className="w-full bg-white h-52 flex flex-col rounded-lg shadow-md hover:scale-105 transition-transform items-center"
               src={Img1}
               alt=""
             />
@@ -41,7 +41,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img2}
               alt=""
             />
@@ -51,7 +51,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img4}
               alt=""
             />
@@ -60,7 +60,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img5}
               alt=""
             />
@@ -69,7 +69,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img6}
               alt=""
             />
@@ -78,7 +78,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img7}
               alt=""
             />
@@ -87,7 +87,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img8}
               alt=""
             />
@@ -97,7 +97,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img10}
               alt=""
             />
@@ -106,7 +106,7 @@ const Bannarslider = () => {
         <SwiperSlide>
           <Link to="/">
             <img
-              className="  bg-white h-32 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
+              className="  bg-white h-52 flex flex-col  w-full  rounded-lg shadow-md hover:scale-105 transition-transform  items-center "
               src={Img11}
               alt=""
             />

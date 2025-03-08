@@ -18,11 +18,21 @@ const Home = () => {
         <Populerproduct />
         <Productslider />
       </div>
-      <div>
+      <div className="mt-5">
         <Shipping />
       </div>
       <div>
-        <Bannarslider />
+        <Bannarslider item={4} />
+      </div>
+      <div className="py-5 ">
+        <h1 className="text-xl font-bold w-11/12 mx-auto">Latest Products</h1>
+        <Productslider />
+        <Bannarslider item={3} />
+      </div>
+      <div className="py-5 ">
+        <h1 className="text-xl font-bold w-11/12 mx-auto">Featured Products</h1>
+        <Productslider />
+        <Bannarslider item={2} />
       </div>
     </>
   );
