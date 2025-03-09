@@ -5,6 +5,7 @@ import Shipping from "./Shipping";
 import Bannarslider from "./Bannarslider";
 import Populerproduct from "./Populerproduct";
 import Productslider from "../Productpage/Productslider/Productslider";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -33,6 +34,10 @@ const Home = () => {
         <h1 className="text-xl font-bold w-11/12 mx-auto">Featured Products</h1>
         <Productslider />
         <Bannarslider item={2} />
+      </div>
+      <div>
+        <h1 className="text-xl font-bold w-11/12 mx-auto">From The Blog</h1>
+        <Blog />
       </div>
     </>
   );

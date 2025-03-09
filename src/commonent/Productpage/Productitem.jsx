@@ -17,7 +17,7 @@ const Productitem = () => {
       >
         <div className=" group relative   ">
           <Link to="/">
-            <div className="w-[200px] h-[270px] overflow-hidden">
+            <div className=" h-[270px] overflow-hidden">
               <img
                 className=" rounded-t-2xl"
                 src="https://res.cloudinary.com/duqoh8gf5/image/upload/v1740650263/1740650262333_buynewtrend-women-maroon-cotton-blend-top-product-images-rvb22aqlk7-1-202201130044.jpg"
