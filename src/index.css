@@ -153,3 +153,22 @@ h1 {
 /* .sidbear .scroll::-webkit-scrollbar-track {
   background: #f1f1f1 !important; 
 }  */
+
+/* .active {
+  background: #ff5252 !important;
+} */
+
+.Activeasctionbtn button.active svg {
+  color: #ff5252 !important;
+  opacity: 1;
+}
+
+.Mui-selected {
+  background: #ff5252 !important;
+  font-size: 30px !important;
+  color: white !important;
+}
+
+.MuiPagination-ul {
+  font-size: 30px !important;
+}

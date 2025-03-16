@@ -4,6 +4,7 @@ import { Rating } from "@smastrom/react-rating";
 import { MdOutlineZoomOutMap } from "react-icons/md";
 import { IoIosGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
+import { BsCart3 } from "react-icons/bs";
 
 import "@smastrom/react-rating/style.css";
 import { Button } from "@mui/material";
@@ -13,11 +14,11 @@ const Productitem = () => {
     <div>
       <div
         className="  shadow-2xl rounded-xl
-       flex flex-col justify-center border-1 border-[rgba(0,0,0,0.1)] items-center"
+       flex   border-1 border-[rgba(0,0,0,0.1)] items-center"
       >
-        <div className="group relative overflow-hidden">
+        <div className="group relative w-[30%]     overflow-hidden">
           <Link to="/">
-            <div className="h-[270px] img overflow-hidden relative">
+            <div className="h-[270px]  img overflow-hidden relative">
               <img
                 className="rounded-t-2xl w-full"
                 src="https://service.spicezgold.com/download/1741864702486_modestouze-attires-women-s-mukaish-worked-ethnic-jacket-with-top-and-pant-set-product-images-rvziicqwq6-0-202403231855.jpg"
@@ -47,7 +48,7 @@ const Productitem = () => {
           </div>
         </div>
 
-        <div className="mt-1 ml-2 pb-3 py-3 ">
+        <div className="mt-1 ml-2 px-10 pb-3 py-3 w-[70%] ">
           <Link to="/">
             {" "}
             <p className="text-[13px] hover:text-[#ff5252] justify-start">
@@ -57,15 +58,27 @@ const Productitem = () => {
           </Link>
           <Link to="/">
             {" "}
-            <h1 className="text-[14px] hover:text-[#ff5252] font-medium w-full py-1">
+            <h1 className="text-[20px] mt-2 mb-2 hover:text-[#ff5252] font-medium w-full py-1 ">
               Deel Band Women Rayon Embroidered Kurta Pant ...
             </h1>
           </Link>
           <Rating style={{ maxWidth: 100 }} value={3} readOnly />
+          <p className="text-[14px] mt-2 mb-2">
+            The unibody model debuted in October 2008 in 13- and 15-inch
+            variants, with a 17-inch variant added in January 2009. Called the
+            "unibody"
+          </p>
 
           <div className="py-2 px-2 flex items-center gap-7 ">
             <span className="line-through text-xl ">$50.00</span>
             <span className="text-red-500 text-xl font-medium">$40.00</span>
+          </div>
+          <div className="mt-3">
+            <Button className="!bg-[#ff5252] hover:!bg-[#000]  !px-3 !text-white !font-bold flex items-center gap-1">
+              {" "}
+              <BsCart3 className="text-xl" />
+              ADD TO CARD
+            </Button>
           </div>
         </div>
       </div>

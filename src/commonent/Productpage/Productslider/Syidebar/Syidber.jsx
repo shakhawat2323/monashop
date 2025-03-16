@@ -175,36 +175,46 @@ const Syidber = () => {
         <Rating style={{ maxWidth: 100 }} value={3} readOnly />
         <Rating style={{ maxWidth: 100 }} value={2} readOnly />
         <Rating style={{ maxWidth: 100 }} value={1} readOnly /> */}
-        <Rating
-          name="half-rating-read"
-          defaultValue={5}
-          precision={5}
-          readOnly
-        />
-        <Rating
-          name="half-rating-read"
-          defaultValue={4}
-          precision={4}
-          readOnly
-        />
-        <Rating
-          name="half-rating-read"
-          defaultValue={3}
-          precision={3}
-          readOnly
-        />
-        <Rating
-          name="half-rating-read"
-          defaultValue={2}
-          precision={2}
-          readOnly
-        />
-        <Rating
-          name="half-rating-read"
-          defaultValue={1}
-          precision={1}
-          readOnly
-        />
+        <div className="w-full">
+          <Rating
+            name="half-rating-read"
+            defaultValue={5}
+            precision={5}
+            readOnly
+          />
+        </div>
+        <div className="w-full">
+          <Rating
+            name="half-rating-read"
+            defaultValue={4}
+            precision={4}
+            readOnly
+          />
+        </div>
+        <div className="w-full">
+          <Rating
+            name="half-rating-read"
+            defaultValue={3}
+            precision={3}
+            readOnly
+          />
+        </div>
+        <div className="w-full">
+          <Rating
+            name="half-rating-read"
+            defaultValue={2}
+            precision={2}
+            readOnly
+          />
+        </div>
+        <div className="w-full">
+          <Rating
+            name="half-rating-read"
+            defaultValue={1}
+            precision={1}
+            readOnly
+          />
+        </div>
       </div>
     </div>
   );
