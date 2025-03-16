@@ -1,0 +1,26 @@
+.sidbear .scroll {
+  max-height: 150px;
+  overflow-y: scroll; /* Allows vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+.sidbear .scroll::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.sidbear .scroll::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+/* Style the scrollbar track */
+.sidbear .scroll::-webkit-scrollbar-track {
+  background: #f1f1f1 !important; /* Optional: Track background color */
+}
+
+/* .css-1uent87-MuiButtonBase-root-MuiButton-root {
+  min-width: 5px !important;
+} */
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
