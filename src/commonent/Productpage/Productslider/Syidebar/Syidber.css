@@ -24,3 +24,15 @@
 .ReactCollapse--collapse {
   transition: height 400ms;
 }
+.range-slider {
+  width: 100%;
+  height: 4px !important;
+}
+.range-slider .range-slider__thumb {
+  width: 14px !important;
+  height: 14px !important;
+  background: #ff5252 !important;
+}
+.range-slider__range {
+  background: #ff5252 !important;
+}
