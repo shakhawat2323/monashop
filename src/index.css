@@ -163,12 +163,41 @@ h1 {
   opacity: 1;
 }
 
-.Mui-selected {
+/* .Mui-selected {
   background: #ff5252 !important;
-  font-size: 30px !important;
-  color: white !important;
-}
 
-.MuiPagination-ul {
+  color: white !important;
+} */
+
+/* .MuiPagination-ul {
   font-size: 30px !important;
+} */
+
+.zoomproductslider .swiper-slide {
+  height: auto !important;
+}
+.zoomproductslider .swiper-button-next {
+  background: #ff5252 !important;
+  bottom: 0px !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100% !important;
+  border-radius: 0px !important;
+  height: 3px !important;
+}
+.zoomproductslider .swiper-button-prev {
+  background: #ff5252 !important;
+  left: 0px !important;
+
+  top: 20px !important;
+
+  width: 100% !important;
+  border-radius: 0px !important;
+  height: 2px !important;
+}
+.zoomproductslider .swiper-button-next::after {
+  transform: rotate(90deg);
+}
+.zoomproductslider .swiper-button-prev::after {
+  transform: rotate(90deg);
 }

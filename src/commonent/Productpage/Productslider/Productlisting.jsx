@@ -10,7 +10,6 @@ import { IoGridSharp } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Productitemviews from "../Productitemviews";
@@ -150,12 +149,7 @@ const Productlisting = () => {
               </div>
             </div>
             <div className="mt-10 text-center flex items-center justify-center">
-              <Pagination
-                className="text-3xl font-bold"
-                count={10}
-                showFirstButton
-                showLastButton
-              />
+              <Pagination count={10} color="secondary" />
             </div>
           </div>
         </section>
