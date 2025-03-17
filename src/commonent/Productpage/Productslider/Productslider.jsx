@@ -7,13 +7,13 @@ import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper/modules";
 import { Link } from "react-router";
 import Productitem from "../Productitem";
 
-const Productslider = () => {
+const Productslider = (props) => {
   return (
-    <div className="w-11/12 mx-auto ">
+    <div className=" ">
       <div>
         <Swiper
           navigation={true}
-          slidesPerView={5.5}
+          slidesPerView={props.item}
           spaceBetween={30}
           pagination={{
             clickable: true,

@@ -7,7 +7,10 @@ import Quntity from "./Quntity";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { IoGitCompareOutline } from "react-icons/io5";
-
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Productitem from "./Productitem";
+import Productslider from "./Productslider/Productslider";
 const ProductDetals = () => {
   const [productaction, setProductaction] = useState(null);
   const [ProductDetalspage, setProductDetalis] = useState(0);
@@ -170,7 +173,7 @@ const ProductDetals = () => {
             </span>
           </div>
           {ProductDetalspage === 0 && (
-            <div className="shadow-md mt-5 w-full py-5 p-8 rounded-md">
+            <div className="shadow-md bg-[#F7F2FF] mt-5 w-full py-5 p-8 rounded-md">
               <h1 className="text-xl font-semibold py-2">
                 Lorem ipsum dolor sit amet.
               </h1>
@@ -273,6 +276,70 @@ const ProductDetals = () => {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+          )}
+          {ProductDetalspage === 2 && (
+            <div className="shadow-md mt-5 bg-[#F7F2FF] w-full py-5 p-8 rounded-md">
+              <p className="text-xl font-medium">
+                Customer questions & answers
+              </p>
+              <div className="scroll w-full max-h-[300px] overflow-y-scroll overflow-x-hidden">
+                <div className="review mt-5 pb-5 border-b border-[rgba(0,0,0,0.1)] w-full flex items-center justify-between">
+                  <div className="info w-[60%] flex  gap-2">
+                    <div className="img">
+                      <div className="avatar p-5 ">
+                        <div className="  w-20 rounded-full  ">
+                          <img src="https://staticg.sportskeeda.com/editor/2022/08/53e15-16596004347246.png" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="w-[70%] mt-10 ">
+                      <h1 className="font-semibold">Rinku Verma</h1>
+                      <h1 className="text-sm opacity-80 mt-2 mb-2">
+                        2024-12-01
+                      </h1>
+
+                      <p className="text-sm opacity-75">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Tempore eius architecto odio perferendis aliquid
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pr-20">
+                    <Rating
+                      style={{ maxWidth: 100 }}
+                      value={5}
+                      size="small"
+                      readOnly
+                    />
+                  </div>
+                </div>
+                <br />
+                <div className="revewfrom bg-[#afafafe7] p-2 rounded-md pr-2">
+                  <h1 className="text-xl">Add a review</h1>
+                </div>
+              </div>
+              <form action="" className="mt-5">
+                <TextField
+                  id="outlined-multiline-flexible"
+                  label="Write a review"
+                  multiline
+                  className="w-8/12 !mb-5 "
+                  rows={4}
+                />
+              </form>
+              <Rating style={{ maxWidth: 100 }} value={5} size="small" />
+              <div className="mt-3">
+                <Button className="!bg-[#ff5252] hover:!bg-[#000]  !px-3 !text-white !font-bold flex items-center gap-1">
+                  {" "}
+                  SUBMIT REVIEW
+                </Button>
+              </div>
+              <div className="pt-8">
+                <h1 className="text-xl font-semibold">Related Products</h1>
+                <Productslider item={5} />
               </div>
             </div>
           )}

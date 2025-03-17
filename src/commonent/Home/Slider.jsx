@@ -20,7 +20,7 @@ import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 const Slider = () => {
   return (
-    <div className=" px-3">
+    <div className=" px-3 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

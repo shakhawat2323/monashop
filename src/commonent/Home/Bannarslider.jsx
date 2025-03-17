@@ -20,7 +20,7 @@ import { Link } from "react-router";
 
 const Bannarslider = (props) => {
   return (
-    <div className="mt-5 w-11/12 mx-auto">
+    <div className="mt-5 ">
       <Swiper
         slidesPerView={props.item}
         spaceBetween={30}

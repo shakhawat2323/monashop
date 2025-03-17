@@ -12,7 +12,7 @@ const Populerproduct = () => {
   };
 
   return (
-    <div className="py-5 w-11/12 mx-auto">
+    <div className="py-5 ">
       <div>
         <div className="flex justify-between items-center">
           <div className="left">

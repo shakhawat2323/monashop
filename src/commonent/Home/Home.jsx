@@ -16,12 +16,16 @@ const Home = () => {
         <Slider />
         <h1 className="text-2xl font-bold text-center py-2">category</h1>
       </div>
-      <div className="bg-[#F5F0F0]  ">
+      <div className="bg-[#F5F0F0]   ">
         <Catslider />
       </div>
-      <div>
-        <Populerproduct />
-        <Productslider />
+      <div className="w-11/12 mx-auto ">
+        <div className="">
+          <Populerproduct />
+        </div>
+        <div className="bg-[#F5F0F0] pb-5">
+          <Productslider item={5} />
+        </div>
       </div>
       <div className="mt-5">
         <Shipping />
@@ -29,14 +33,14 @@ const Home = () => {
       <div>
         <Bannarslider item={4} />
       </div>
-      <div className="py-5 ">
-        <h1 className="text-xl font-bold w-11/12 mx-auto">Latest Products</h1>
-        <Productslider />
+      <div className="py-5 w-11/12 mx-auto ">
+        <h1 className="text-xl font-bold ">Latest Products</h1>
+        <Productslider item={5} />
         <Bannarslider item={3} />
       </div>
-      <div className="py-5 ">
-        <h1 className="text-xl font-bold w-11/12 mx-auto">Featured Products</h1>
-        <Productslider />
+      <div className="py-5 w-11/12 mx-auto">
+        <h1 className="text-xl  font-bold">Featured Products</h1>
+        <Productslider item={5} />
         <Bannarslider item={2} />
       </div>
       <div>
