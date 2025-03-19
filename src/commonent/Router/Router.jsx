@@ -3,6 +3,9 @@ import Root from "../Root/Root";
 import Home from "../Home/Home";
 import Productlisting from "../Productpage/Productslider/Productlisting";
 import ProductDetals from "../Productpage/ProductDetals";
+import Login from "../Authentication/Login";
+import Register from "../Authentication/Register";
+import Cart from "../Cart/Cart";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +22,18 @@ export const router = createBrowserRouter([
       {
         path: "/productdetels/:id",
         element: <ProductDetals></ProductDetals>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
       },
     ],
   },

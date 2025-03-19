@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Productitem from "./Productitem";
 import Productslider from "./Productslider/Productslider";
+import ProductDetalseComponent from "./ProductDetalseComponent";
 const ProductDetals = () => {
   const [productaction, setProductaction] = useState(null);
   const [ProductDetalspage, setProductDetalis] = useState(0);
@@ -48,7 +49,10 @@ const ProductDetals = () => {
           <div className="productZoomContainer  w-[40%] ">
             <ProductZoom />
           </div>
-          <div className="procutcontent w-[60%]">
+          <div className="procutcontent w-[60%] pr-10 pl-10">
+            <ProductDetalseComponent />
+          </div>
+          {/* <div className="procutcontent w-[60%]">
             <h1 className="text-2xl mb-2 text-[#332929] font-medium ">
               Tracksuit with Insert Pockets-Women
             </h1>
@@ -140,10 +144,10 @@ const ProductDetals = () => {
                 <FaRegHeart className="text-2xl" /> Add to Wishlist
               </span>
               <span className="flex items-center cursor-pointer transition transform duration-500 hover:text-[#ff5252] gap-2 ">
-                <IoGitCompareOutline className="text-2xl" /> Add to Wishlist
+                <IoGitCompareOutline className="text-2xl" /> Add to Compare
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="pt-5 px-5 ">
           <div className="flex items-center gap-8">
@@ -317,7 +321,7 @@ const ProductDetals = () => {
                   </div>
                 </div>
                 <br />
-                <div className="revewfrom bg-[#afafafe7] p-2 rounded-md pr-2">
+                <div className="revewfrom bg-[#afafafe7] p-2  rounded-md pr-2">
                   <h1 className="text-xl">Add a review</h1>
                 </div>
               </div>

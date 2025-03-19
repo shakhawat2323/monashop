@@ -8,7 +8,9 @@ import { IoIosGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 import Navigation from "./Navigation";
+import useAuth from "../Hooks/useAuth";
 const Header = () => {
+  const { setCardPanelopen } = useAuth();
   return (
     <>
       <div className="bg-[#FFFFFF]">
@@ -28,6 +30,7 @@ const Header = () => {
                 <Link to="#">
                   <li className="list">Blog</li>
                 </Link>
+
                 <Link to="#">
                   <li className="list">Contact Us</li>
                 </Link>
@@ -74,7 +77,10 @@ const Header = () => {
                   </Badge>
                 </Tooltip>
               </li>
-              <li className="list">
+              <li
+                onClick={() => setCardPanelopen(true)}
+                className="list cursor-pointer"
+              >
                 <Tooltip title="Cart">
                   <Badge badgeContent={1} uiBadge-badge>
                     <MdOutlineShoppingCart
@@ -85,9 +91,13 @@ const Header = () => {
                 </Tooltip>
               </li>
               <li className="flex gap-1 ">
-                <Link className="list text-xl font-[500px] ">Login</Link>
+                <Link to="/login" className="list text-xl font-[500px] ">
+                  Login
+                </Link>
                 <span className="text-xl font-[500px]">|</span>
-                <Link className="list text-xl font-[500px]">Register</Link>
+                <Link to="/register" className="list text-xl font-[500px]">
+                  Register
+                </Link>
               </li>
               {/* <div className="dropdown dropdown-end">
               <div

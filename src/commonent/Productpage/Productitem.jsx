@@ -7,8 +7,10 @@ import { FaRegHeart } from "react-icons/fa";
 
 import "@smastrom/react-rating/style.css";
 import { Button } from "@mui/material";
+import useAuth from "../Hooks/useAuth";
 
 const Productitem = () => {
+  const { setOpen } = useAuth();
   return (
     <div>
       <div
@@ -35,7 +37,10 @@ const Productitem = () => {
           </span>
 
           <div className="absolute top-[-200px] overflow-hidden transition-all duration-500 group-hover:top-[30px] -right-[15px] z-50 flex items-center gap-2 flex-col w-[80px] opacity-0 group-hover:opacity-95">
-            <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-[#ff5252] !hover:text-black !group">
+            <Button
+              onClick={() => setOpen(true)}
+              className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-[#ff5252] !hover:text-black !group"
+            >
               <MdOutlineZoomOutMap className="text-[18px] text-black hover:text-white group" />
             </Button>
             <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-[#ff5252] !hover:text-black !group">

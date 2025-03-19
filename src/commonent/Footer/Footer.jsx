@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 import { IoChatboxOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
+import useAuth from "../Hooks/useAuth";
 
 const Footer = () => {
   return (
